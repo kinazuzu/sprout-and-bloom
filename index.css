@@ -58,8 +58,8 @@ header{
 }
 
 .logo-section img{
-    width:72px;
-    height:72px;
+    width: 140px;
+    height:auto;
     object-fit:contain;
 }
 
