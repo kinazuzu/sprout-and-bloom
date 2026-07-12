@@ -5,6 +5,7 @@ const cards = document.querySelectorAll(".product-card");
 
 const difficultyFilters = document.querySelectorAll(".difficulty-filter");
 const waterFilters = document.querySelectorAll(".water-filter");
+const categoryFilters = document.querySelectorAll(".category-filter");
 
 function getSelected(filters) {
     return [...filters]
@@ -15,19 +16,16 @@ function getSelected(filters) {
 function filterPlants() {
 
     const search = searchInput.value.toLowerCase();
-
     const selectedDifficulty = getSelected(difficultyFilters);
-
     const selectedWater = getSelected(waterFilters);
+    const selectedCategory = getSelected(categoryFilters);
 
     cards.forEach(card => {
 
         const name = card.dataset.name.toLowerCase();
-
         const difficulty = card.dataset.difficulty;
-
         const water = card.dataset.water;
-
+        const category = card.dataset.category;
         const matchesSearch = name.includes(search);
 
         const matchesDifficulty =
@@ -38,7 +36,16 @@ function filterPlants() {
             selectedWater.length === 0 ||
             selectedWater.includes(water);
 
-        if (matchesSearch && matchesDifficulty && matchesWater) {
+        const matchesCategory =
+            selectedCategory.length === 0 ||
+            selectedCategory.includes(category);
+
+        if (
+            matchesSearch &&
+            matchesDifficulty &&
+            matchesWater &&
+            matchesCategory
+        ) {
 
             card.style.display = "block";
 
@@ -61,6 +68,12 @@ difficultyFilters.forEach(filter => {
 });
 
 waterFilters.forEach(filter => {
+
+    filter.addEventListener("change", filterPlants);
+
+});
+
+categoryFilters.forEach(filter => {
 
     filter.addEventListener("change", filterPlants);
 
