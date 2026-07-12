@@ -55,159 +55,38 @@ header{
 /* ---------- Top Header ---------- */
 
 .top-header{
-
     height:120px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
+    overflow:hidden;
     padding:0 40px;
-
 }
 
 .logo-section{
-
     display:flex;
-
     align-items:center;
-
     gap:18px;
 
 }
 
 .logo-section img{
-
-    width:180px;
-
+    width: 180px;
     height:auto;
-
 }
 
 .logo-text h1{
-
     font-family:'Cormorant Garamond',serif;
-
-    font-size:2.3rem;
-
+    font-size:2rem;
     color:#4E6240;
-
     line-height:1;
-
 }
 
 .logo-text p{
-
-    margin-top:5px;
-
+     margin-top:4px;
     color:#6D7764;
-
     font-size:.9rem;
-
-}
-
-/* ---------- Search ---------- */
-
-.search-container{
-
-    width:470px;
-
-    height:56px;
-
-    background:white;
-
-    border-radius:40px;
-
-    display:flex;
-
-    overflow:hidden;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-.search-container input{
-
-    flex:1;
-
-    border:none;
-
-    outline:none;
-
-    background:transparent;
-
-    padding:0 22px;
-
-}
-
-.search-container button{
-
-    width:70px;
-
-    background:#A8C686;
-
-    color:white;
-
-    transition:.3s;
-
-}
-
-.search-container button:hover{
-
-    background:#8FAE69;
-
-}
-
-/* ---------- User ---------- */
-
-.user-actions{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:18px;
-
-}
-
-.user-actions a{
-
-    background:#A8C686;
-
-    color:white;
-
-    padding:12px 28px;
-
-    border-radius:30px;
-
-    transition:.3s;
-
-}
-
-.user-actions a:hover{
-
-    background:#8FAE69;
-
-}
-
-.profile-btn{
-
-    width:52px;
-
-    height:52px;
-
-    border-radius:50%;
-
-    background:white;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-
-    color:#4E6240;
-
-    font-size:1.2rem;
-
+    letter-spacing:.5px;
 }
 
 /* ==========================================
