@@ -41,14 +41,13 @@ header{
     box-shadow:0 3px 15px rgba(0,0,0,.05);
 }
 
-.top-header{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
-    padding:22px 0;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.top-header {               /* adjusted the logo size */
+    height: 120px;          
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;       
+    padding: 0 40px;
 }
 
 .logo-section{
@@ -57,10 +56,9 @@ header{
     gap:18px;
 }
 
-.logo-section img{
-    width: 140px;
-    height:auto;
-    object-fit:contain;
+.logo-section img {  /* adjusted the logo size */
+    width: 180px;
+    height: auto;
 }
 
 .logo-text h1{
