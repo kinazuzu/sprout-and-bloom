@@ -36,6 +36,7 @@ select{
 }
 
 header{
+    width:100%;
     position:sticky;
     top:0;
     z-index:1000;
@@ -67,12 +68,16 @@ header{
 .logo-text h1{
     font-family:'Cormorant Garamond',serif;
     font-size:2.3rem;
+    font-weight:700;
     color:#4E6240;
+    line-height:1;
 }
 
 .logo-text p{
+    margin-top:4px;
     color:#6D7764;
     font-size:.9rem;
+    letter-spacing:.5px;
 }
 
 .search-container{
