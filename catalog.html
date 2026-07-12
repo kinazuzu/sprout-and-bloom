@@ -87,7 +87,10 @@
 
                 <h3>Search</h3>
 
-                <input type="text" placeholder="Plant name...">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Plant name...">
 
             </div>
 
@@ -104,10 +107,10 @@
 
                 <h3>Difficulty</h3>
 
-                <label><input type="checkbox"> Beginner</label>
-                <label><input type="checkbox"> Easy</label>
-                <label><input type="checkbox"> Moderate</label>
-                <label><input type="checkbox"> Advanced</label>
+           <label><input type="checkbox" class="difficulty-filter" value="beginner"> Beginner</label>
+            <label><input type="checkbox" class="difficulty-filter" value="easy"> Easy</label>
+            <label><input type="checkbox" class="difficulty-filter" value="moderate"> Moderate</label>
+            <label><input type="checkbox" class="difficulty-filter" value="advanced"> Advanced</label>
 
             </div>
 
@@ -116,10 +119,10 @@
 
                 <h3>Watering</h3>
 
-                <label><input type="checkbox"> Daily</label>
-                <label><input type="checkbox"> Weekly</label>
-                <label><input type="checkbox"> Biweekly</label>
-                <label><input type="checkbox"> Monthly</label>
+                <label><input type="checkbox" class="water-filter" value="daily"> Daily</label>
+                <label><input type="checkbox" class="water-filter" value="weekly"> Weekly</label>
+                <label><input type="checkbox" class="water-filter" value="biweekly"> Biweekly</label>
+                <label><input type="checkbox" class="water-filter" value="monthly"> Monthly</label>
 
             </div>
 
@@ -130,16 +133,17 @@
 
     <section class="catalog-content">
 
-
         <div class="product-grid">
-            <article class="product-card">
 
-    <div class="product-badges">
-        <span class="sale-badge">25% OFF</span>
-        <span class="difficulty beginner">Beginner</span>
-    </div>
 
-<!-- PRODUCT CARDS -->
+<!-- GOLDEN POTHOS -->
+<article
+    class="product-card"
+    data-name="Golden Pothos"
+    data-category="indoor"
+    data-difficulty="beginner"
+    data-water="weekly">
+
     <img src="pic/golden pathos plant.png" alt="Golden Pothos">
 
     <div class="product-info">
@@ -165,7 +169,13 @@
 
 </article>
 
-<article class="product-card">
+<!-- MONSTERA -->
+<article
+    class="product-card"
+    data-name="Monstera Deliciosa"
+    data-category="indoor"
+    data-difficulty="easy"
+    data-water="weekly">
 
     <div class="product-badges">
         <span class="sale-badge">15% OFF</span>
@@ -197,7 +207,13 @@
 
 </article>
 
-<article class="product-card">
+<!-- SNAKE PLANT -->
+<article
+    class="product-card"
+    data-name="Snake Plant"
+    data-category="indoor"
+    data-difficulty="beginner"
+    data-water="monthly">
 
     <div class="product-badges">
         <span class="difficulty beginner">Beginner</span>
@@ -227,7 +243,13 @@
 
 </article>
 
-<article class="product-card">
+<!-- PEACE LILY -->
+<article
+    class="product-card"
+    data-name="Peace Lily"
+    data-category="indoor"
+    data-difficulty="easy"
+    data-water="weekly">
 
     <div class="product-badges">
         <span class="sale-badge">30% OFF</span>
@@ -259,7 +281,13 @@
 
 </article>
 
-<article class="product-card">
+<!-- AFRICAN VIOLET -->
+<article
+    class="product-card"
+    data-name="African Violet"
+    data-category="indoor"
+    data-difficulty="moderate"
+    data-water="weekly">
 
     <img src="pic/african violet.png" alt="African Violet">
 
@@ -285,7 +313,13 @@
 
 </article>
 
-<article class="product-card">
+<!-- PURPLE SHAMROCK -->
+<article
+    class="product-card"
+    data-name="Purple Shamrock"
+    data-category="outdoor"
+    data-difficulty="moderate"
+    data-water="weekly">
 
     <img src="pic/purple shamrock.png" alt="Purple Shamrock">
 
@@ -311,7 +345,13 @@
 
 </article>
 
-<article class="product-card">
+<!-- ZZ PLANT -->
+<article
+    class="product-card"
+    data-name="ZZ Plant"
+    data-category="indoor"
+    data-difficulty="beginner"
+    data-water="monthly">
 
     <img src="pic/zz plant.png" alt="ZZ Plant">
 
@@ -337,7 +377,13 @@
 
 </article>
 
-<article class="product-card">
+<!-- SPIDER PLANT -->
+<article
+    class="product-card"
+    data-name="Spider Plant"
+    data-category="indoor"
+    data-difficulty="beginner"
+    data-water="weekly">
 
     <img src="pic/spider plant.png" alt="Spider Plant">
 
@@ -363,7 +409,13 @@
 
 </article>
 
-<article class="product-card">
+<!-- CHINESE EVERGREEN -->
+<article
+    class="product-card"
+    data-name="Chinese Evergreen"
+    data-category="indoor"
+    data-difficulty="easy"
+    data-water="weekly">
 
     <img src="pic/chinese evergreen.png" alt="Chinese Evergreen">
 
@@ -386,6 +438,8 @@
         <a href="plant.html" class="view-btn">View Details</a>
 
     </div>
+    
+</article>
     
     </section>
 
@@ -436,6 +490,8 @@ Growing happier homes one plant at a time.
 </div>
 
 </footer>
+
+<script src="catalog.js"></script>
 
 </body>
 </html>
