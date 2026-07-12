@@ -136,18 +136,24 @@ nav .active{
     margin-bottom:45px;
 }
 
-.contact-layout{
+/* added */
+.contact-layout{        
     display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:40px;
+    grid-template-columns:3fr 2fr;
+    gap:50px;
+    align-items:start;
 }
-
+/* added */
 .contact-form,
 .contact-info{
     background:#FFFDF8;
     border-radius:25px;
     padding:40px;
     box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.contact-info{
+    min-width:420px;
 }
 
 .contact-form h2,
@@ -211,26 +217,34 @@ textarea{
     margin-right:8px;
 }
 
+/* added */
 .info-item{
     display:flex;
-    gap:18px;
-    margin-bottom:30px;
+    align-items:flex-start;
+    gap:20px;
+    margin-bottom:35px;
 }
 
 .info-item:last-child{
     margin-bottom:0;
 }
 
+/* added */
 .info-item i{
-    width:55px;
-    height:55px;
+    width:60px;
+    height:60px;
+    min-width:60px;
+    flex-shrink:0;
+
     background:#A8C686;
-    color:white;
+    color:#fff;
     border-radius:50%;
+
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:1.2rem;
+
+    font-size:1.3rem;
 }
 
 .info-item h3{
