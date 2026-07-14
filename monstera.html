@@ -9,7 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body
+    data-id="monstera-deliciosa"
+    data-name="Monstera Deliciosa"
+    data-price="930"
+    data-image="pic/monstera.png">
 
   <header class="site-header">
     <div class="brand">
@@ -66,10 +70,16 @@
             <span class="value">Weekly</span>
           </div>
         <div class="button-group">
-          <a href="../catalog.html" class="back-btn">Back to Catalog</a>
+         <button class="add-cart-btn back-btn">
+        Add to Reservation
+    </button>
+
+    <a href="catalog.html" class="back-btn">
+        Back to Catalog
+    </a>
       </div>
     </section>
   </main>
-
+<script src="cart.js"></script>
 </body>
 </html>

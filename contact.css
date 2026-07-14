@@ -506,3 +506,32 @@ footer{
 .remove-btn:hover{
     background:#c13f3b;
 }
+
+.reservation-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.reservation-header h3{
+    margin:0;
+}
+
+.browse-more-btn{
+    display:inline-block;
+    background:#A8C686;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:999px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.browse-more-btn:hover{
+    background:#8FAE69;
+    transform:translateY(-2px);
+}
