@@ -423,3 +423,86 @@ footer{
     }
 
 }
+#reservationItems{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.reservation-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#F8F5EC;
+    border:1px solid #E7E2D8;
+    border-radius:18px;
+    padding:18px;
+}
+
+.reservation-card img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    background:white;
+    border-radius:12px;
+    padding:10px;
+}
+
+.reservation-details{
+    flex:1;
+}
+
+.reservation-details h4{
+    color:#4E6240;
+    margin-bottom:8px;
+    font-size:1.2rem;
+}
+
+.reservation-details p{
+    margin:4px 0;
+    color:#666;
+}
+
+.quantity-controls{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:12px;
+}
+
+.quantity-controls button{
+    width:34px;
+    height:34px;
+    border:none;
+    border-radius:50%;
+    background:#A8C686;
+    color:white;
+    font-size:1.2rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.quantity-controls button:hover{
+    background:#8FAE69;
+}
+
+.quantity-controls span{
+    min-width:20px;
+    text-align:center;
+    font-weight:600;
+}
+
+.remove-btn{
+    background:#d9534f;
+    color:white;
+    padding:12px 18px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.remove-btn:hover{
+    background:#c13f3b;
+}

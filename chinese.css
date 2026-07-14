@@ -288,3 +288,28 @@ body {
     font-size: 28px;
   }
 }
+
+.add-cart-btn {
+  display: inline-block;
+  background: #5a6d46;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 18px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background: #49593a;
+  transform: translateY(-2px);
+}
+
+.button-group {
+  margin-top: 32px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
